@@ -1,0 +1,18 @@
+{
+  "name": "cc-tracer",
+  "owner": {
+    "name": "teocns"
+  },
+  "metadata": {
+    "description": "tracer: which Claude Code session did what, verbatim from its own transcripts, from the shell."
+  },
+  "plugins": [
+    {
+      "name": "tracer",
+      "source": "./",
+      "description": "Which session did what — a structural index over Claude Code's own transcripts, verbatim, no LLM pass. Its own command, `tracer`: `tracer sessions` (what is running, what was asked, how it went) and `tracer trace` (every tool call, a turn's steps, the sessions that touched a file). Plus /tracer:trace, :blame and :index, and a Stop hook that keeps the index current. Needs uv; no other plugin.",
+      "version": "2.4.0",
+      "license": "MIT"
+    }
+  ]
+}
